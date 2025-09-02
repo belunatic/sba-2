@@ -57,7 +57,8 @@ ul li a {
 	font-weight: 600;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:focus {
 	text-decoration: underline;
 }
 
