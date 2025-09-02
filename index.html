@@ -88,6 +88,66 @@
 					</article>
 				</section>
 			</section>
+			<!-- contact section -->
+			<section id="contact">
+				<h2>Contact Us</h2>
+				<form onsubmit="handleSubmit">
+					<label for="name"> Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						autocomplete="name"
+						placeholder="John DOe" />
+					<label for="email"> Email</label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						autocomplete="email"
+						placeholder="jd@.mail.com" />
+					<label for="subject"> Subject</label>
+					<input
+						type="text"
+						name="subject"
+						id="subject"
+						autocomplete="name"
+						aria-label="Summarize why you are contacting us"
+						placeholder="Pricing Details..." />
+					<label for="message">Message</label>
+					<textarea id="message" placeholder="i will like..."></textarea>
+					<p aria-live="assertive" id="form-message"></p>
+					<button>Submit</button>
+				</form>
+			</section>
 		</main>
+		<footer>
+			<section id="comm">
+				<div id="social" aria-label="social-media">
+					<ul>
+						<li>
+							<a href="http://" target="_blank" rel="noopener noreferrer"
+								>Github</a
+							>
+						</li>
+						<li>
+							<a href="http://" target="_blank" rel="noopener noreferrer"
+								>LinkedIn</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div id="info" aria-label="contact information">
+					<ul>
+						<l1>Email: as@mail.com</l1>
+						<l1>Phone: 123-554-3221</l1>
+					</ul>
+				</div>
+			</section>
+			<section id="copyright">
+				<p aria-label="copyright">&copy; 2025 Belunatic. All right reserve.</p>
+			</section>
+		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>

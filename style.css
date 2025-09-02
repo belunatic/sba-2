@@ -133,7 +133,7 @@ ul li a:hover {
 .service-details {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 30px;
 	grid-row-gap: 20px;
 }
@@ -156,6 +156,10 @@ article * {
 	padding-bottom: 10px;
 }
 
+article span a {
+	color: #fffff0;
+}
+
 @media (max-width: 600px) {
 	.service-details {
 		grid-template-rows: repeat(1, 1fr);
@@ -174,4 +178,73 @@ article * {
 	article {
 		padding-bottom: 30px;
 	}
+}
+
+/* contact */
+
+#contact {
+	display: flex;
+	margin: 3rem;
+	flex-direction: column;
+	row-gap: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width: 50%;
+}
+
+label,
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+input,
+textarea {
+	padding: 10px;
+	font-size: 0.9rem;
+}
+
+button {
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 1rem;
+	background-color: #3b3a3a;
+	color: #fffff0;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3b3a3ad8;
+}
+
+.error {
+	color: rgb(170, 2, 2);
+}
+
+.success {
+	color: rgb(3, 104, 3);
+}
+
+#form-message {
+	padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+	form,
+	input,
+	label {
+		width: 100%;
+	}
+}
+
+/* footer */
+footer {
+	background-color: #111111;
+	color: #fffff0;
 }
