@@ -16,6 +16,12 @@ h2 {
 	font-size: 2.5rem;
 }
 
+::placeholder {
+	color: #535353;
+	font-size: 0.9rem;
+	opacity: 1;
+}
+
 /* Header */
 
 header section {
@@ -245,6 +251,62 @@ button:hover {
 
 /* footer */
 footer {
+	background-color: #cccbcb;
+	color: #3b3a3a;
+	padding: 4rem 0rem 0rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+#comm {
+	display: flex;
+	justify-content: space-between;
+}
+
+#comm div {
+	width: 50%;
+}
+
+#info {
+	text-align: right;
+}
+
+#comm ul {
+	list-style: none;
+}
+
+#comm ul li {
+	display: block;
+}
+
+footer ul li a {
+	color: 3b3a3a;
+	text-decoration: underline;
+	font-weight: 400;
+}
+
+#copyright {
+	border-top: 1px solid #3b3a3a;
+	text-align: center;
 	background-color: #111111;
 	color: #fffff0;
+}
+
+@media (max-width: 600px) {
+	#comm {
+		flex-wrap: wrap;
+		row-gap: 1rem;
+		justify-content: center;
+		align-items: center;
+	}
+	#comm div {
+		width: 100%;
+	}
+
+	#comm ul li {
+		padding: 5px;
+		text-align: center;
+		text-transform: none;
+	}
 }
